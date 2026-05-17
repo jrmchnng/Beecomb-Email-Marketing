@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="x-apple-disable-message-reformatting">
+    <title>Beecomb House P.E.I. | Unique Stays</title>
+    <style>
+        body,
+        table,
+        td,
+        a {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+
+        table,
+        td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+
+        img {
+            -ms-interpolation-mode: bicubic;
+            border: 0;
+            outline: none;
+            text-decoration: none;
+            display: block;
+        }
+
+        table {
+            border-collapse: collapse !important;
+        }
+
+        body {
+            margin: 0 !important;
+            padding: 0 !important;
+            width: 100% !important;
+            height: 100% !important;
+            background-color: #e7e7e4;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .button1 {
+                display: block !important;
+                width: fit-content !important;
+                margin: 0 auto !important;
+                text-align: center !important;
+                box-sizing: border-box !important;
+                padding-left: 18px !important;
+                padding-right: 18px !important;
+                align-items: center !important;
+            }
+        }
+
+        @media screen and (max-width: 640px) {
+            .outer-pad {
+                padding: 8px 6px 24px !important;
+            }
+
+            .container {
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+
+            .stack,
+            .stack-column,
+            .cta-table,
+            .cta-table td {
+                display: block !important;
+                width: 100% !important;
+                max-width: 100% !important;
+                box-sizing: border-box !important;
+            }
+
+            .stack-column {
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+                padding-bottom: 14px !important;
+            }
+
+            .hero-shell,
+            .section-shell,
+            .content-shell,
+            .footer-shell {
+                padding-left: 16px !important;
+                padding-right: 16px !important;
+            }
+
+            .hero-shell {
+                padding-top: 16px !important;
+                padding-bottom: 18px !important;
+            }
+
+            .section-shell {
+                padding-top: 22px !important;
+                padding-bottom: 20px !important;
+            }
+
+            .content-shell {
+                padding-top: 0 !important;
+                padding-bottom: 14px !important;
+            }
+
+            .footer-shell {
+                padding-top: 22px !important;
+                padding-bottom: 18px !important;
+            }
+
+            .hero-copy-pad {
+                padding: 22px 18px 24px !important;
+            }
+
+            .card-copy-pad {
+                padding: 18px 16px !important;
+            }
+
+            .text-block-pad {
+                padding: 22px 20px 22px !important;
+            }
+
+            .cta-block-pad {
+                padding: 10px 20px 28px !important;
+            }
+
+            .hero-title {
+                font-size: 31px !important;
+                line-height: 34px !important;
+            }
+
+            .section-title {
+                font-size: 23px !important;
+                line-height: 28px !important;
+            }
+
+            .property-name {
+                font-size: 20px !important;
+                line-height: 24px !important;
+            }
+
+            .feature-title {
+                font-size: 17px !important;
+                line-height: 23px !important;
+            }
+
+            .display-stat {
+                font-size: 24px !important;
+                line-height: 28px !important;
+            }
+
+            .body-copy {
+                font-size: 15px !important;
+                line-height: 24px !important;
+            }
+
+            .kicker {
+                font-size: 10px !important;
+                line-height: 14px !important;
+                letter-spacing: 1.8px !important;
+            }
+
+            .button {
+                display: block !important;
+                width: 100% !important;
+                text-align: center !important;
+                box-sizing: border-box !important;
+                padding-left: 18px !important;
+                padding-right: 18px !important;
+            }
+
+            .mobile-copy-tight {
+                font-size: 14px !important;
+                line-height: 23px !important;
+            }
+
+            .mobile-cta-center {
+                margin: 0 auto !important;
+            }
+
+            .mobile-cta-center td {
+                text-align: center !important;
+            }
+
+            .mobile-image {
+                width: 100% !important;
+                max-width: 100% !important;
+                height: auto !important;
+            }
+
+            .stat-cell {
+                display: block !important;
+                width: auto !important;
+                max-width: 100% !important;
+                border-right: none !important;
+                border-bottom: 1px solid #8b775f !important;
+            }
+
+            .stats-table {
+                width: 100% !important;
+                table-layout: fixed !important;
+            }
+
+            .stat-cell-last {
+                border-bottom: none !important;
+            }
+
+            .mobile-split {
+                display: table-cell !important;
+                box-sizing: border-box !important;
+                padding-bottom: 0 !important;
+                vertical-align: top !important;
+            }
+
+            .mobile-split-left {
+                width: 56% !important;
+            }
+
+            .mobile-split-right {
+                width: 44% !important;
+            }
+
+            .mobile-half {
+                display: table-cell !important;
+                width: 50% !important;
+                box-sizing: border-box !important;
+                vertical-align: top !important;
+                padding-bottom: 0 !important;
+            }
+
+            .mobile-gap-right {
+                padding-right: 6px !important;
+                padding-left: 0 !important;
+            }
+
+            .mobile-gap-left {
+                padding-left: 6px !important;
+                padding-right: 0 !important;
+            }
+        }
+    </style>
+</head>
+
+<body style="margin:0; padding:0; background-color:#e7e7e4;">
+    <div style="display:none; max-height:0; overflow:hidden; opacity:0; mso-hide:all;">
+        Beecomb House P.E.I. pairs Charlottetown cafe mornings, harbour walks, and beach days with a polished stay.
+    </div>
+
+    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%"
+        style="background-color:#e7e7e4;">
+        <tr>
+            <td align="center" class="outer-pad" style="padding:16px 10px 32px;">
+                <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="640" class="container"
+                    style="width:640px; max-width:640px;">
+                    <tr>
+                        <td align="center"
+                            style="padding:12px 18px 18px; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:18px; letter-spacing:0.2px; color:#89837b;">
+                            A Charlottetown escape with cafe mornings, harbour walks, and soft modern interiors
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="background-color:#fbfaf7; border:1px solid #d7d1ca;">
+                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                <tr>
+                                    <td align="center" style="padding:24px 24px 14px;">
+                                        <img src="https://i1.createsend1.com/ei/y/9D/6EE/949/035406/csfinal/Uniquestayslogo2025_01_3015_16_33UTC.png"
+                                            alt="Unique Stays" width="122"
+                                            style="width:122px; max-width:122px; height:auto;">
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="hero-shell" style="padding:10px 24px 18px;">
+                                        <table role="presentation" cellpadding="0" cellspacing="0" border="0"
+                                            width="100%">
+                                            <tr>
+                                                <td style="padding:0 0 12px;">
+                                                    <table role="presentation" cellpadding="0" cellspacing="0"
+                                                        border="0" width="100%">
+                                                        <tr>
+                                                            <td class="stack-column mobile-half mobile-gap-right"
+                                                                width="50%" valign="top" style="padding:0 10px 12px 0;">
+                                                                <img class="mobile-image"
+                                                                    src="https://uniquestays.ca/wp-content/uploads/2026/05/beecomb-1.jpg"
+                                                                    alt="Beecomb House exterior in Charlottetown"
+                                                                    width="286"
+                                                                    style="width:100%; max-width:286px; height:auto;">
+                                                            </td>
+                                                            <td class="stack-column mobile-half mobile-gap-left"
+                                                                width="50%" valign="top" style="padding:0 0 12px 10px;">
+                                                                <img class="mobile-image"
+                                                                    src="https://uniquestays.ca/wp-content/uploads/2026/05/beecomb-2.jpg"
+                                                                    alt="Beecomb House kitchen and dining area"
+                                                                    width="286"
+                                                                    style="width:100%; max-width:286px; height:auto;">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="stack-column mobile-half mobile-gap-right"
+                                                                width="50%" valign="top" style="padding:0 10px 0 0;">
+                                                                <img class="mobile-image"
+                                                                    src="https://uniquestays.ca/wp-content/uploads/2026/05/beecomb-3.jpg"
+                                                                    alt="Beecomb House interior living space"
+                                                                    width="286"
+                                                                    style="width:100%; max-width:286px; height:auto;">
+                                                            </td>
+                                                            <td class="stack-column mobile-half mobile-gap-left"
+                                                                width="50%" valign="top" style="padding:0 0 0 10px;">
+                                                                <img class="mobile-image"
+                                                                    src="https://uniquestays.ca/wp-content/uploads/2026/05/beecomb-4.jpg"
+                                                                    alt="Beecomb House bedroom details" width="286"
+                                                                    style="width:100%; max-width:286px; height:auto;">
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="hero-copy-pad"
+                                                    style="padding:28px 22px 30px; background-color:#efe5d9;">
+                                                    <div class="kicker"
+                                                        style="font-family:Arial, Helvetica, sans-serif; font-size:11px; line-height:16px; letter-spacing:2.1px; text-transform:uppercase; color:#9f7b57; font-weight:bold; margin-bottom:12px;">
+                                                        Prince Edward Island
+                                                    </div>
+                                                    <div class="property-name"
+                                                        style="font-family:Georgia, 'Times New Roman', serif; font-size:22px; line-height:26px; color:#41372f; margin-bottom:12px;">
+                                                        Beecomb House P.E.I.
+                                                    </div>
+                                                    <div class="hero-title"
+                                                        style="font-family:Georgia, 'Times New Roman', serif; font-size:44px; line-height:46px; color:#41372f; margin-bottom:16px;">
+                                                        Charlottetown looks better when you stay in the middle of it.
+                                                    </div>
+                                                    <div class="body-copy"
+                                                        style="font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height:26px; color:#625a52; margin-bottom:14px;">
+                                                        This is the kind of stay that feels polished the moment you walk
+                                                        in, yet relaxed enough to settle into right away.
+                                                    </div>
+                                                    <div class="body-copy"
+                                                        style="font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height:26px; color:#625a52; margin-bottom:22px;">
+                                                        Coffee across the street, Peakes Quay within strolling distance,
+                                                        and beach afternoons just 20 minutes away.
+                                                    </div>
+                                                    <table role="presentation" cellpadding="0" cellspacing="0"
+                                                        border="0" class="cta-table">
+                                                        <tr>
+                                                            <td bgcolor="#a77e4e">
+                                                                <a class="button"
+                                                                    href="https://book.uniquestays.ca/listings/98412"
+                                                                    target="_blank"
+                                                                    style="display:inline-block; padding:15px 28px; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:12px; letter-spacing:1.7px; text-transform:uppercase; font-weight:bold; color:#ffffff;">
+                                                                    Reserve Beecomb
+                                                                </a>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="content-shell" style="padding:0 24px 30px;">
+                                        <table role="presentation" cellpadding="0" cellspacing="0" border="0"
+                                            width="100%" class="stats-table" style="background-color:#6f5b45;">
+                                            <tr>
+                                                <td class="stat-cell" width="33.33%"
+                                                    style="padding:18px 18px; border-right:1px solid #8b775f;">
+                                                    <div class="kicker"
+                                                        style="font-family:Arial, Helvetica, sans-serif; font-size:10px; line-height:14px; letter-spacing:1.7px; text-transform:uppercase; color:#eee1cd; font-weight:bold; margin-bottom:6px;">
+                                                        Across the street
+                                                    </div>
+                                                    <div class="display-stat"
+                                                        style="font-family:Georgia, 'Times New Roman', serif; font-size:25px; line-height:28px; color:#ffffff;">
+                                                        Receiver Coffee
+                                                    </div>
+                                                </td>
+                                                <td class="stat-cell" width="33.33%"
+                                                    style="padding:18px 18px; border-right:1px solid #8b775f;">
+                                                    <div class="kicker"
+                                                        style="font-family:Arial, Helvetica, sans-serif; font-size:10px; line-height:14px; letter-spacing:1.7px; text-transform:uppercase; color:#eee1cd; font-weight:bold; margin-bottom:6px;">
+                                                        Short stroll
+                                                    </div>
+                                                    <div class="display-stat"
+                                                        style="font-family:Georgia, 'Times New Roman', serif; font-size:25px; line-height:28px; color:#ffffff;">
+                                                        Peakes Quay
+                                                    </div>
+                                                </td>
+                                                <td class="stat-cell stat-cell-last" width="33.33%"
+                                                    style="padding:18px 18px;">
+                                                    <div class="kicker"
+                                                        style="font-family:Arial, Helvetica, sans-serif; font-size:10px; line-height:14px; letter-spacing:1.7px; text-transform:uppercase; color:#eee1cd; font-weight:bold; margin-bottom:6px;">
+                                                        Beach escape
+                                                    </div>
+                                                    <div class="display-stat"
+                                                        style="font-family:Georgia, 'Times New Roman', serif; font-size:25px; line-height:28px; color:#ffffff;">
+                                                        Brackley Beach in 20
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td
+                            style="background-color:#ffffff; border-left:1px solid #d7d1ca; border-right:1px solid #d7d1ca;">
+                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                <tr>
+                                    <td class="section-shell" style="padding:34px 24px 14px;">
+                                        <div class="kicker"
+                                            style="font-family:Arial, Helvetica, sans-serif; font-size:11px; line-height:16px; letter-spacing:2px; text-transform:uppercase; color:#8f7459; font-weight:bold; margin-bottom:12px;">
+                                            Why this stay lands
+                                        </div>
+                                        <div class="section-title"
+                                            style="font-family:Georgia, 'Times New Roman', serif; font-size:32px; line-height:37px; color:#41372f; margin-bottom:12px;">
+                                            Not just central. Thoughtfully placed.
+                                        </div>
+                                        <div class="body-copy"
+                                            style="font-family:Arial, Helvetica, sans-serif; font-size:15px; line-height:25px; color:#625a52;">
+                                            Beecomb House gives you the part people usually have to choose between:
+                                            location and comfort. Here, you get both.
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="content-shell" style="padding:0 24px 18px;">
+                                        <table role="presentation" cellpadding="0" cellspacing="0" border="0"
+                                            width="100%">
+                                            <tr>
+                                                <td class="stack-column" width="33.33%" valign="top"
+                                                    style="padding:0 8px 18px 0;">
+                                                    <table role="presentation" cellpadding="0" cellspacing="0"
+                                                        border="0" width="100%" style="background-color:#f2ebe2;">
+                                                        <tr>
+                                                            <td class="card-copy-pad" style="padding:22px 18px;">
+                                                                <div class="feature-title"
+                                                                    style="font-family:Arial, Helvetica, sans-serif; font-size:15px; line-height:22px; font-weight:bold; color:#41372f; margin-bottom:8px;">
+                                                                    Wake up in the heart of Charlottetown
+                                                                </div>
+                                                                <div class="body-copy"
+                                                                    style="font-family:Arial, Helvetica, sans-serif; font-size:14px; line-height:23px; color:#625a52;">
+                                                                    Step out for your morning coffee, stroll the
+                                                                    boardwalk, or head to Peakes Quay — all just minutes
+                                                                    away.
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td class="stack-column" width="33.33%" valign="top"
+                                                    style="padding:0 4px 18px;">
+                                                    <table role="presentation" cellpadding="0" cellspacing="0"
+                                                        border="0" width="100%" style="background-color:#eee4d8;">
+                                                        <tr>
+                                                            <td class="card-copy-pad" style="padding:22px 18px;">
+                                                                <div class="feature-title"
+                                                                    style="font-family:Arial, Helvetica, sans-serif; font-size:15px; line-height:22px; font-weight:bold; color:#41372f; margin-bottom:8px;">
+                                                                    Come home to comfort
+
+                                                                </div>
+                                                                <div class="body-copy"
+                                                                    style="font-family:Arial, Helvetica, sans-serif; font-size:14px; line-height:23px; color:#625a52;">
+                                                                    Fresh, modern interiors with the kind of warmth that
+                                                                    makes it easy to settle in.
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td class="stack-column" width="33.33%" valign="top"
+                                                    style="padding:0 0 18px 8px;">
+                                                    <table role="presentation" cellpadding="0" cellspacing="0"
+                                                        border="0" width="100%" style="background-color:#f2dfcc;">
+                                                        <tr>
+                                                            <td class="card-copy-pad" style="padding:22px 18px;">
+                                                                <div class="feature-title"
+                                                                    style="font-family:Arial, Helvetica, sans-serif; font-size:15px; line-height:22px; font-weight:bold; color:#41372f; margin-bottom:8px;">
+                                                                    Make more of your stay
+
+                                                                </div>
+                                                                <div class="body-copy"
+                                                                    style="font-family:Arial, Helvetica, sans-serif; font-size:14px; line-height:23px; color:#625a52;">
+                                                                    From waterfront walks and dinner plans to beach days
+                                                                    at Brackley, everything fits naturally into your
+                                                                    trip.
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td
+                            style="background-color:#ffffff; border-left:1px solid #d7d1ca; border-right:1px solid #d7d1ca;">
+                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                <tr>
+                                    <td class="content-shell" style="padding:10px 24px 26px;">
+                                        <table role="presentation" cellpadding="0" cellspacing="0" border="0"
+                                            width="100%" style="background-color:#f6f1ea;">
+                                            <tr>
+                                                <td class="stack-column" width="50%" valign="top" style="padding:0;">
+                                                    <img class="mobile-image"
+                                                        src="https://uniquestays.ca/wp-content/uploads/2026/05/beecomb-5.jpg"
+                                                        alt="Beecomb House interior living space" width="296"
+                                                        style="width:100%; max-width:296px; height:auto;">
+                                                </td>
+                                                <td class="stack-column text-block-pad" width="50%" valign="top"
+                                                    style="padding:24px 22px 22px;">
+                                                    <div class="kicker"
+                                                        style="font-family:Arial, Helvetica, sans-serif; font-size:11px; line-height:16px; letter-spacing:2px; text-transform:uppercase; color:#9f7b57; font-weight:bold; margin-bottom:10px;">
+                                                        Inside the stay
+                                                    </div>
+                                                    <div class="section-title"
+                                                        style="font-family:Georgia, 'Times New Roman', serif; font-size:30px; line-height:34px; color:#41372f; margin-bottom:12px;">
+                                                        A space that feels beautiful, comfortable, and easy to settle
+                                                        into.
+                                                    </div>
+                                                    <div class="body-copy mobile-copy-tight"
+                                                        style="font-family:Arial, Helvetica, sans-serif; font-size:15px; line-height:25px; color:#625a52; margin-bottom:14px;">
+                                                        Spend the day exploring Charlottetown, grab coffee across the
+                                                        street, then come back to Beecomb for a slow evening and a
+                                                        backyard BBQ.
+                                                    </div>
+                                                    <div class="body-copy mobile-copy-tight"
+                                                        style="font-family:Arial, Helvetica, sans-serif; font-size:15px; line-height:25px; color:#625a52;">
+                                                        It has that rare balance of feeling thoughtfully designed while
+                                                        still feeling like home.
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td
+                            style="background-color:#6f5b45; border-left:1px solid #d7d1ca; border-right:1px solid #d7d1ca;">
+                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                <tr>
+                                    <td class="section-shell" style="padding:34px 24px 14px;">
+                                        <div class="kicker"
+                                            style="font-family:Arial, Helvetica, sans-serif; font-size:11px; line-height:16px; letter-spacing:2px; text-transform:uppercase; color:#d9c2a1; font-weight:bold; margin-bottom:12px;">
+                                            The visual mood
+                                        </div>
+                                        <div class="section-title"
+                                            style="font-family:Georgia, 'Times New Roman', serif; font-size:31px; line-height:36px; color:#ffffff; margin-bottom:12px;">
+                                            Warm details, natural light, and space to unwind.
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="content-shell" style="padding:0 24px 18px;">
+                                        <table role="presentation" cellpadding="0" cellspacing="0" border="0"
+                                            width="100%">
+                                            <tr>
+                                                <td class="stack-column mobile-half mobile-gap-right" width="50%"
+                                                    valign="top" style="padding:0 10px 12px 0;">
+                                                    <img class="mobile-image"
+                                                        src="https://uniquestays.ca/wp-content/uploads/2026/05/beecomb-6.jpg"
+                                                        alt="Beecomb House exterior in Charlottetown" width="286"
+                                                        style="width:100%; max-width:286px; height:auto;">
+                                                </td>
+                                                <td class="stack-column mobile-half mobile-gap-left" width="50%"
+                                                    valign="top" style="padding:0 0 12px 10px;">
+                                                    <img class="mobile-image"
+                                                        src="https://uniquestays.ca/wp-content/uploads/2026/05/beecomb-7.jpg"
+                                                        alt="Beecomb House kitchen and dining area" width="286"
+                                                        style="width:100%; max-width:286px; height:auto;">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="stack-column mobile-half mobile-gap-right" width="50%"
+                                                    valign="top" style="padding:0 10px 0 0;">
+                                                    <img class="mobile-image"
+                                                        src="https://uniquestays.ca/wp-content/uploads/2026/05/beecomb-8.jpg"
+                                                        alt="Beecomb House interior living space" width="286"
+                                                        style="width:100%; max-width:286px; height:auto;">
+                                                </td>
+                                                <td class="stack-column mobile-half mobile-gap-left" width="50%"
+                                                    valign="top" style="padding:0 0 0 10px;">
+                                                    <img class="mobile-image"
+                                                        src="https://uniquestays.ca/wp-content/uploads/2026/05/beecomb-9.jpg"
+                                                        alt="Beecomb House bedroom details" width="286"
+                                                        style="width:100%; max-width:286px; height:auto;">
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="section-shell cta-block-pad" style=" padding:4px 24px 34px;">
+                                        <div class="body-copy mobile-copy-tight-1"
+                                            style="font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height:26px; color:#f2e6d8;margin-bottom: 20px;">
+                                            Planning a quick city break or a longer reset? Beecomb House gives
+                                            the whole trip a better starting point.
+                                        </div>
+                                        <table role="presentation" cellpadding="0" cellspacing="0" border="0"
+                                            class="cta-table mobile-cta-center">
+                                            <tr>
+                                                <td bgcolor="#a77e4e">
+                                                    <a class="button-plan"
+                                                        href="https://book.uniquestays.ca/listings/98412"
+                                                        target="_blank"
+                                                        style="display:inline-block; padding:15px 32px; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:12px; letter-spacing:1.7px; text-transform:uppercase; font-weight:bold; color:#ffffff;">
+                                                        Plan Your Stay
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="background-color:#efe6da; border:1px solid #d7d1ca; border-top:none;">
+                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                <tr>
+                                    <td class="footer-shell" align="center" style="padding:28px 24px 14px;">
+                                        <img src="https://i1.createsend1.com/ei/y/9D/6EE/949/035406/csfinal/Uniquestayslogo2025_01_3015_16_33UTC.png"
+                                            alt="Unique Stays" width="98"
+                                            style="width:98px; max-width:98px; height:auto;">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center"
+                                        style="padding:0 24px 10px; font-family:Arial, Helvetica, sans-serif; font-size:13px; line-height:22px; color:#5e5852;">
+                                        Charlottetown, Prince Edward Island<br>
+                                        <a href="https://uniquestays.ca/" target="_blank"
+                                            style="color:#6f5b45;">uniquestays.ca</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center" style="padding:6px 24px 24px;">
+                                        <!-- <a href="https://www.instagram.com/uniquestays.ca/" target="_blank"
+                                            style="display:inline-block;">
+                                            <img src="https://img.icons8.com/ios-filled/50/6F5B45/instagram-new.png"
+                                                alt="Instagram" width="20"
+                                                style="width:20px; max-width:20px; height:auto;">
+                                        </a> -->
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
